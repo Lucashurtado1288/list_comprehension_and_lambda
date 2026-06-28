@@ -1,32 +1,42 @@
 '''List comprehensions provide a concise way to create lists. 
 
-It consists of brackets containing an expression followed by a for clause, then
-zero or more for or if clauses. The expressions can be anything, meaning you can
-put in all kinds of objects in lists.
+    My Notes: 
+    A list comprehension is a compact, readable way to create a new list 
+    from an existing iterable (like a list, range, or string) using a single line of code.
 
-The result will be a new list resulting from evaluating the expression in the
-context of the for and if clauses which follow it. 
+    BASIC SYNTAX: [expression for item in iterable]
+
+    It consists of brackets containing an expression followed by a for clause, then
+    zero or more for or if clauses. The expressions can be anything, meaning you can
+    put in all kinds of objects in lists.
+
+    The result will be a new list resulting from evaluating the expression in the
+    context of the for and if clauses which follow it. 
 
 The list comprehension always returns a result list. '''
 
 
 '''
-new_list = []
-for i in original_list:
-    if filter(i):
-        new_list.append(expressions(i))  '''
+    new_list = []
+    for i in original_list:
+        if filter(i):
+            new_list.append(expressions(i))  
 
-#You can obtain the same thing using list comprehension:
+    # You can obtain the same thing using list comprehension:
+    # newer more efficient way shown below. Older way shown above
 
-# new_list = [expression(i) for i in original_list if filter(i)]
-
+    new_list = [expression(i) for i in original_list if filter(i)]
+'''
 
 #The list comprehension starts with a '[' and ']', to help you remember that the
-#result is going to be a list.
+# result is going to be a list.
 
+'''
 #There are 3 parts to list comprehension:
 
 #*result*  = [*transform/expression*    *iteration*         *filter/conidtion*     ]
+
+'''
 
 # 1st example of list comprehension
 list1 = list(range(1,11))
@@ -72,6 +82,7 @@ new_range = [i*i for i in range(10) if i % 2 == 0 ]
 print(new_range)
 
 # Faster way to print numbers from "Hello 12345 World"
+    # is.digit() function returns just integers
 string = "Hello 12345 World"
 numbers = [x for x in string if x.isdigit()]
 print(numbers)
