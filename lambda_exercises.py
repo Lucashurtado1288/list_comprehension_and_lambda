@@ -12,7 +12,7 @@ print(even_nums)
 
 odd_nums = list(filter(lambda x: (x%2==1), orig_list))
 print(odd_nums)
-
+print("-"*40)
 
 ''' 2)
 Create a list of days that have exactly 6 characters using a lambda function on the list below. 
@@ -42,7 +42,7 @@ remove_list = ['orange', 'black']
 
 specific_words = list(filter(lambda word: word not in remove_list, orig_list))
 print(specific_words)
-
+print("-"*40)
 
 
 
@@ -59,7 +59,7 @@ Formula for converting Celcius to Fahrenheit:
 cel = [0, 12, 34, 25, -5]
 fahrenheit = list(map(lambda c: (9/5)* c + 32, cel))
 print(fahrenheit)
-
+print("-"*40)
 
 
 
@@ -78,7 +78,7 @@ final_price = list(map(lambda i: (i['name'], f"${i['price'] * 0.90:,.2f}"), cart
 
 for name, price in final_price:
     print(name, price)
-
+print("-"*40)
 
 
 ''' 6)
@@ -109,7 +109,7 @@ languages = ['Python', 'Java', 'C', 'Ruby', 'JavaScript']
 
 sorted_languages = sorted(languages, key=lambda x: len(x))
 print(sorted_languages)
-
+print("-"*40)
 
 
 

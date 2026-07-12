@@ -38,7 +38,7 @@ The list comprehension always returns a result list. '''
 
 '''
 
-# 1st example of list comprehension
+# USING A FOR LOOP
 list1 = list(range(1,11))
 list2 = []
 
@@ -46,12 +46,10 @@ for x in list1:
     if x > 5:
         x *= 20
         list2.append(x)
-
 print(list2)
 
-# 2nd example of list comprehension but more concise
+# USING LIST COMPRENHENSION
 list2 = [x * 20 for x in list1 if x > 5]
-
 print(list2)
 
 
